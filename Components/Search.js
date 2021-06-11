@@ -1,17 +1,12 @@
 import React from 'react'
 import { StyleSheet, View, TextInput, Button, Text, FlatList } from 'react-native'
-import films from '../Helpers/filmsData'
-import FilmItem from './FilmItem'
+
 class Search extends React.Component {
   render() {
     return (
       <View style={styles.main_container}>
         <TextInput style={styles.textinput} placeholder='Titre du film'/>
         <Button title='Rechercher' onPress={() => {}}/>
-        <FlatList
-          data={films}
-          renderItem={({item}) => <FilmItem film={item}/>}
-        />
       </View>
     )
   }
